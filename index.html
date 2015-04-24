@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <body ng-app="myApp">
+        <div ng-controller="Ctrl">
+            <input ng-model="name" ng-attr-placeholder="{{empty}}">
+            <div  ng-if="name.length>0">
+                You text:<span ng-bind="name" ng-style="{color:mycolor}"></span>.
+            </div>
+
+        </div>
+    </body>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/test1.js"></script>
+</html>
